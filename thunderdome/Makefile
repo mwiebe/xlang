@@ -5,7 +5,7 @@ JULIA_PATH = $(HOME)/julia
 SHLIB_EXT = dll
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
-	SHLIB_EXT = sh
+	SHLIB_EXT = so
 endif
 ifeq ($(UNAME_S),Darwin)
 	SHLIB_EXT = dylib
