@@ -229,12 +229,10 @@ float    td_float(td_val_t *v);
 double   td_double(td_val_t *v);
 void    *td_pointer(td_val_t *v);
 
-void     td_convert_char_array_to_td_utf8_array(td_val_t *out_array, char** in_chararray); 
-
 // utilities
 
 void td_error(char *msg);
-
+  int td_create_simple_graph(graph_t *graph);
 
 // starting environments
 
